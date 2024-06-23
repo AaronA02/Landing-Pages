@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: Calibri;
+}
+
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(2, 42, 42); */
+}
+
+#left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    /* background-color: bisque; */
+}
+
+#right{
+    height: 100%;
+    width: 60%;
+    background-image: url(https://images.unsplash.com/photo-1604762524889-3e2fcc145683?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 10%;
+}
+
+#rtop{
+    display: flex
+    ;
+    height: 50%;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+#rtleft{
+    height: 100%;
+    width: 55%;
+    background-image: url(https://imgcdn.floweraura.com/pink-pot-cactus-9818407pl-A_1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#rtright{
+    height: 100%;
+    width: 45%;
+    background-image: url(https://images.unsplash.com/photo-1592187270271-9a4b84faa228?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: top center;
+}
+
+#lnav{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lnavr i{
+    color: royalblue;
+}
+
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#text-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text-center h1{
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+#text-center p{
+    font-size: 23px;
+    color: grey;
+    line-height: 35px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#text-center a{
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid gray;
+    padding-bottom: 7px;
+    font-weight: 550;
+}
+
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+
+    #main #left{
+        width: 100%;
+    }
+
+    #main #right{
+        width: 100%;
+    }
+}
